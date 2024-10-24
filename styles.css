@@ -1,0 +1,149 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aliceblue;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin: 100px auto 20px;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+}
+
+#clock-container {
+  background-color: rgba(167, 202, 255, 0.706);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 120px;
+  text-align: center;
+  user-select: none;
+}
+
+#button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.Buttons {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 20px;
+  transition: all 0.159s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 5px 20px 20px;
+}
+
+#start {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#start:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#start:active {
+  background-color: #3e8e41;
+  transform: scale(1);
+}
+
+#stop {
+  background-color: #f44336;
+  color: white;
+}
+
+#stop:hover {
+  background-color: #e53935;
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#stop:active {
+  background-color: #772222;
+  transform: scale(1);
+}
+
+#flag {
+  background-color: #2196F3;
+  color: white;
+}
+
+#flag:hover {
+  background-color: #1976D2;
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#flag:active {
+  background-color: #1565C0;
+  transform: scale(1);
+}
+
+#reset {
+  background-color: #ffeb3b;
+  color: black;
+}
+
+#reset:hover {
+  background-color: #fdd835;
+  transform: scale(1.05);
+}
+
+#reset:active {
+  background-color: #6b740a;
+  transform: scale(1);
+}
+
+.Buttons:focus {
+  outline: 2px dashed #000;
+  outline-offset: 4px;
+}
+
+#clock {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#flag-clock {
+  padding-right: 30px;
+  margin-left: 100px;
+  margin-top: 40px;
+  width: 350px;
+  display: inline-block;
+}
+
+#save-clock {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2em;
+}
+
+@media (max-width: 768px) {
+  #flag-clock {
+      margin-left: 0;
+      width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  #clock {
+      font-size: 3rem;
+  }
+}
