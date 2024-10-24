@@ -119,7 +119,7 @@ h1 {
 }
 
 .Buttons:focus {
-  outline: 2px dashed #000;
+  outline: 1px dashed #000;
   outline-offset: 1px;
 }
 
