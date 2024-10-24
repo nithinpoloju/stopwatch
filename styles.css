@@ -120,7 +120,7 @@ h1 {
 
 .Buttons:focus {
   outline: 2px dashed #000;
-  outline-offset: 3px;
+  outline-offset: 2px;
 }
 
 #clock {
